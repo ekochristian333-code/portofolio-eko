@@ -43,8 +43,13 @@ h2 {
     text-align: center;
 }
 
-p {
+/* PERBAIKAN: Membuat semua paragraf di section menjadi rata tengah */
+.section p {
     margin-bottom: 1rem;
+    text-align: center; /* Teks di tengah */
+    max-width: 800px; /* Maksimal lebar agar mudah dibaca */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .section {
@@ -99,6 +104,7 @@ p {
     height: 100vh;
     display: flex;
     align-items: center;
+    justify-content: center; /* Pastikan konten di tengah horizontal */
     text-align: center;
     padding-top: 80px; /* Memberi jarak agar tidak tertutup header */
 }
@@ -134,20 +140,86 @@ p {
     transform: translateY(-3px);
 }
 
-/* --- Project Card --- */
-.project-card {
+/* --- Gaya untuk Bagian Tentang Saya --- */
+.about-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+    text-align: left; /* Kembalikan ke kiri untuk daftar */
+}
+
+.detail-item {
     background: var(--white-color);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.detail-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.detail-item h3 i {
+    margin-right: 0.5rem;
+}
+
+.detail-item ul {
+    list-style: none;
+    padding-left: 1rem;
+}
+
+.detail-item ul li {
+    position: relative;
+    padding-left: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.detail-item ul li::before {
+    content: '▪';
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+    font-size: 1.2rem;
+}
+
+/* --- Gaya untuk Grid Proyek --- */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.project-card {
+    background: var(--bg-color);
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
-    margin: auto;
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.project-card i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
 }
 
 .project-card h3 {
     margin-bottom: 1rem;
-    color: var(--primary-color);
+    color: var(--text-color);
+}
+
+.project-card p {
+    margin-bottom: 1.5rem;
+    text-align: center; /* Pastikan teks di card tetap tengah */
 }
 
 /* --- Footer --- */
