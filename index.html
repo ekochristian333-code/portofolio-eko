@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eko Christian Aritonang - Portofolio</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Menambahkan Font Awesome untuk Ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
@@ -25,34 +27,86 @@
         <section id="home" class="hero">
             <div class="hero-content">
                 <h1>Halo, Saya <span>Eko Christian Aritonang</span></h1>
-                <p>Siswa yang antusias dalam pengembangan web dan teknologi.</p>
+                <p>Seorang Junior Graphic Designer & Web Developer yang bersemangat untuk belajar dan berkembang.</p>
                 <a href="#projects" class="btn">Lihat Proyek Saya</a>
             </div>
         </section>
 
+        <!-- Bagian TENTANG SAYA yang Diperbarui -->
         <section id="about" class="section">
-            <h2>Tentang Saya</h2>
-            <p>Saya adalah seorang pelajar yang sedang mendalami dunia pemrograman, khususnya pengembangan web (Web Development). Proyek ini adalah salah satu tugas akhir saya untuk menunjukkan kemampuan dasar dalam membuat website statis menggunakan HTML, CSS, dan JavaScript. Saya selalu bersemangat untuk belajar hal-hal baru dan mengasah skill saya.</p>
+            <div class="container">
+                <h2>Tentang Saya</h2>
+                <p>Saya Eko Christian Aritonang, lulusan SMK TUNAS MEDIA jurusan Multimedia. Saya memiliki minat besar di bidang desain grafis dan pengembangan web, serta berpengalaman dalam menggunakan software Adobe Illustrator, Photoshop, dan Video Editing.</p>
+                
+                <div class="about-details">
+                    <div class="detail-item">
+                        <h3><i class="fas fa-briefcase"></i> Pengalaman</h3>
+                        <p><strong>PT. Digital Open House</strong> (Prakerin, Feb-Apr 2022)</p>
+                        <ul>
+                            <li>Membuat konten untuk media sosial.</li>
+                            <li>Membantu Virtual Event Hybrid sebagai Kameramen.</li>
+                            <li>Membantu Virtual Event Full Online sebagai Pinner.</li>
+                        </ul>
+                    </div>
+                    <div class="detail-item">
+                        <h3><i class="fas fa-graduation-cap"></i> Pendidikan</h3>
+                        <p><strong>SMK Tunas Media</strong> (2021-2023)</p>
+                        <ul>
+                            <li>Jurusan Multimedia</li>
+                            <li>Aktif dalam kegiatan OSIS dan pembuatan konten sekolah.</li>
+                        </ul>
+                    </div>
+                    <div class="detail-item">
+                        <h3><i class="fas fa-tools"></i> Kemampuan</h3>
+                        <ul>
+                            <li>Adobe Photoshop, Adobe Illustrator</li>
+                            <li>Video Editing</li>
+                            <li>HTML, CSS, JavaScript (Dasar)</li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="https://github.com/ekochristian333-code/portofolio-eko/raw/main/EKO%20CHRISTIAN%20ARITONANG%20CV.pdf" target="_blank" class="btn">Download CV Saya</a>
+            </div>
         </section>
 
+        <!-- Bagian PROYEK yang Diperbarui -->
         <section id="projects" class="section section-alt">
-            <h2>Proyek Saya</h2>
-            <div class="project-card">
-                <h3>Website Portofolio Pribadi</h3>
-                <p>Website ini adalah proyek tugas akhir yang dibuat dengan HTML, CSS, dan JavaScript. Website ini responsif dan memiliki desain yang modern.</p>
-                <a href="#" class="btn">Lihat Proyek (Anda sedang melihatnya)</a>
+            <div class="container">
+                <h2>Proyek Saya</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <i class="fas fa-cloud-sun"></i>
+                        <h3>Aplikasi Cek Cuaca</h3>
+                        <p>Aplikasi desktop berbasis Python yang dapat menampilkan informasi cuaca secara real-time dengan fitur input teks dan suara.</p>
+                        <a href="https://github.com/ekochristian333-code/portofolio-eko/blob/main/cuaca_app.py" target="_blank" class="btn">Lihat Kode</a>
+                    </div>
+                    <div class="project-card">
+                        <i class="fas fa-store"></i>
+                        <h3>Halaman E-Commerce</h3>
+                        <p>Desain tampilan untuk halaman produk toko online yang menampilkan berbagai macam barang dengan antarmuka yang menarik.</p>
+                        <a href="https://github.com/ekochristian333-code/portofolio-eko/blob/main/Screenshot%202025-11-20%20191854.png" target="_blank" class="btn">Lihat Gambar</a>
+                    </div>
+                    <div class="project-card">
+                        <i class="fas fa-gamepad"></i>
+                        <h3>Desain Asset Game</h3>
+                        <p>Konsep dan desain visual untuk sebuah game, mencakup karakter dan lingkungan dengan tema jungle adventure.</p>
+                        <a href="https://github.com/ekochristian333-code/portofolio-eko/blob/main/0920(4)-Cover.jpg" target="_blank" class="btn">Lihat Gambar</a>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section id="contact" class="section">
-            <h2>Hubungi Saya</h2>
-            <p>Anda dapat menghubungi saya melalui email untuk kolaborasi atau sekadar bertanya.</p>
-            <a href="mailto:ekochristian333@gmail.com" class="btn">Kirim Email</a>
+            <div class="container">
+                <h2>Hubungi Saya</h2>
+                <p>Saya terbuka untuk kolaborasi dan kesempatan baru. Jangan ragu untuk menghubungi saya!</p>
+                <a href="mailto:e123ko1@gmail.com" class="btn">Kirim Email</a>
+            </div>
         </section>
     </main>
 
     <footer class="footer">
-        <p>&copy; 2025 Eko Christian Aritonang. Dibuat dengan css, js dan HTML.</p>
+        <p>&copy; 2025 Eko Christian Aritonang. Dibuat dengan Vscode.</p>
     </footer>
 
     <button id="backToTop" class="back-to-top">↑</button>
