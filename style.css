@@ -43,15 +43,6 @@ h2 {
     text-align: center;
 }
 
-/* PERBAIKAN: Membuat semua paragraf di section menjadi rata tengah */
-.section p {
-    margin-bottom: 1rem;
-    text-align: center; /* Teks di tengah */
-    max-width: 800px; /* Maksimal lebar agar mudah dibaca */
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .section {
     padding: 4rem 0;
 }
@@ -79,10 +70,19 @@ h2 {
 }
 
 .logo {
-    color: var(--primary-color);
-    font-size: 1.5rem;
-    font-weight: 700;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px; /* Atur tinggi logo */
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover img {
+    transform: scale(1.05);
 }
 
 .navbar .nav-link {
@@ -97,16 +97,16 @@ h2 {
     color: var(--primary-color);
 }
 
-/* --- Hero Section (Bagian Utama) --- */
+/* --- Hero Section --- */
 .hero {
     background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
     color: var(--white-color);
     height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center; /* Pastikan konten di tengah horizontal */
+    justify-content: center;
     text-align: center;
-    padding-top: 80px; /* Memberi jarak agar tidak tertutup header */
+    padding-top: 80px;
 }
 
 .hero-content h1 {
@@ -114,7 +114,7 @@ h2 {
 }
 
 .hero-content span {
-    color: #ffd700; /* Warna emas untuk menonjolkan nama */
+    color: #ffd700;
 }
 
 .hero-content p {
@@ -123,21 +123,18 @@ h2 {
     margin: 1rem auto 2rem;
 }
 
-/* --- Tombol --- */
-.btn {
-    display: inline-block;
-    background: var(--secondary-color);
-    color: var(--white-color);
-    padding: 0.8rem 2rem;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: background 0.3s ease, transform 0.3s ease;
+/* --- Teks di Section (Tentang, Kontak) --- */
+.section p {
+    margin-bottom: 1rem;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.btn:hover {
-    background: var(--primary-color);
-    transform: translateY(-3px);
+.cta-container {
+    text-align: center;
+    margin-top: 2rem;
 }
 
 /* --- Gaya untuk Bagian Tentang Saya --- */
@@ -146,7 +143,7 @@ h2 {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
     margin-top: 2rem;
-    text-align: left; /* Kembalikan ke kiri untuk daftar */
+    text-align: left;
 }
 
 .detail-item {
@@ -154,11 +151,13 @@ h2 {
     padding: 1.5rem;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    height: 100%;
 }
 
 .detail-item h3 {
     color: var(--primary-color);
     margin-bottom: 0.5rem;
+    font-size: 1.2rem;
 }
 
 .detail-item h3 i {
@@ -219,7 +218,55 @@ h2 {
 
 .project-card p {
     margin-bottom: 1.5rem;
-    text-align: center; /* Pastikan teks di card tetap tengah */
+    text-align: center;
+}
+
+/* --- Gaya untuk Kontak --- */
+.contact-info {
+    margin: 2rem 0;
+    font-size: 1.1rem;
+}
+
+.contact-info p {
+    margin-bottom: 0.5rem;
+}
+
+.contact-info a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-info i {
+    margin-right: 0.5rem;
+    color: var(--primary-color);
+}
+
+/* --- Tombol --- */
+.btn {
+    display: inline-block;
+    background: var(--secondary-color);
+    color: var(--white-color);
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+.btn i {
+    margin-right: 0.5rem;
 }
 
 /* --- Footer --- */
@@ -243,7 +290,7 @@ h2 {
     height: 50px;
     font-size: 1.5rem;
     cursor: pointer;
-    display: none; /* Sembunyikan awalnya */
+    display: none;
     z-index: 999;
     transition: background 0.3s ease;
 }

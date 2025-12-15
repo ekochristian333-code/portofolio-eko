@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eko Christian Aritonang - Portofolio</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Menambahkan Font Awesome untuk Ikon -->
+    <!-- Font Awesome untuk Ikon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
@@ -14,7 +15,10 @@
 <body>
 
     <header class="header">
-        <a href="#" class="logo">Eko C.A.</a>
+        <!-- GANTI 'URL_LOGO_ANDA' dengan link GitHub Anda -->
+        <a href="#" class="logo">
+            <img src="URL_LOGO_ANDA" alt="Logo Eko Christian Aritonang">
+        </a>
         <nav class="navbar">
             <a href="#home" class="nav-link">Beranda</a>
             <a href="#about" class="nav-link">Tentang</a>
@@ -27,23 +31,22 @@
         <section id="home" class="hero">
             <div class="hero-content">
                 <h1>Halo, Saya <span>Eko Christian Aritonang</span></h1>
-                <p>Seorang Junior Graphic Designer & Web Developer yang bersemangat untuk belajar dan berkembang.</p>
+                <p>Seorang Junior Graphic Designer & Web Developer yang bersemangat untuk belajar dan berkembang dalam dunia kreatif dan teknologi.</p>
                 <a href="#projects" class="btn">Lihat Proyek Saya</a>
             </div>
         </section>
 
-        <!-- Bagian TENTANG SAYA yang Diperbarui -->
         <section id="about" class="section">
             <div class="container">
                 <h2>Tentang Saya</h2>
-                <p>Saya Eko Christian Aritonang, lulusan SMK TUNAS MEDIA jurusan Multimedia. Saya memiliki minat besar di bidang desain grafis dan pengembangan web, serta berpengalaman dalam menggunakan software Adobe Illustrator, Photoshop, dan Video Editing.</p>
+                <p>Saya Eko Christian Aritonang, lulusan SMK TUNAS MEDIA jurusan Multimedia dengan minat besar di bidang desain grafis dan pengembangan web. Saya berpengalaman dalam menggunakan software Adobe Illustrator, Photoshop, dan Video Editing, serta antusias mempelajari teknologi web.</p>
                 
                 <div class="about-details">
                     <div class="detail-item">
                         <h3><i class="fas fa-briefcase"></i> Pengalaman</h3>
                         <p><strong>PT. Digital Open House</strong> (Prakerin, Feb-Apr 2022)</p>
                         <ul>
-                            <li>Membuat konten untuk media sosial.</li>
+                            <li>Membuat konten untuk mengisi social media.</li>
                             <li>Membantu Virtual Event Hybrid sebagai Kameramen.</li>
                             <li>Membantu Virtual Event Full Online sebagai Pinner.</li>
                         </ul>
@@ -65,11 +68,13 @@
                         </ul>
                     </div>
                 </div>
-                <a href="https://github.com/ekochristian333-code/portofolio-eko/raw/main/EKO%20CHRISTIAN%20ARITONANG%20CV.pdf" target="_blank" class="btn">Download CV Saya</a>
+                <div class="cta-container">
+                    <!-- GANTI 'URL_CV_ANDA' dengan link GitHub Anda -->
+                    <a href="URL_CV_ANDA" target="_blank" class="btn"><i class="fas fa-download"></i> Download CV Saya</a>
+                </div>
             </div>
         </section>
 
-        <!-- Bagian PROYEK yang Diperbarui -->
         <section id="projects" class="section section-alt">
             <div class="container">
                 <h2>Proyek Saya</h2>
@@ -80,11 +85,12 @@
                         <p>Aplikasi desktop berbasis Python yang dapat menampilkan informasi cuaca secara real-time dengan fitur input teks dan suara.</p>
                         <a href="https://github.com/ekochristian333-code/portofolio-eko/blob/main/cuaca_app.py" target="_blank" class="btn">Lihat Kode</a>
                     </div>
+                    <!-- GAMBAR E-COMMERCE SUDAH DIPERBARUI DI BAWAH INI -->
                     <div class="project-card">
                         <i class="fas fa-store"></i>
                         <h3>Halaman E-Commerce</h3>
-                        <p>Desain tampilan untuk halaman produk toko online yang menampilkan berbagai macam barang dengan antarmuka yang menarik.</p>
-                        <a href="https://github.com/ekochristian333-code/portofolio-eko/blob/main/Screenshot%202025-11-20%20191854.png" target="_blank" class="btn">Lihat Gambar</a>
+                        <p>Desain tampilan untuk halaman produk toko online yang menampilkan berbagai macam barang dengan antarmuka yang menarik dan responsif.</p>
+                        <a href="https://github.com/ekochristian333-code/portofolio-eko/blob/main/Screenshot%20(321).png" target="_blank" class="btn">Lihat Gambar</a>
                     </div>
                     <div class="project-card">
                         <i class="fas fa-gamepad"></i>
@@ -100,13 +106,17 @@
             <div class="container">
                 <h2>Hubungi Saya</h2>
                 <p>Saya terbuka untuk kolaborasi dan kesempatan baru. Jangan ragu untuk menghubungi saya!</p>
-                <a href="mailto:e123ko1@gmail.com" class="btn">Kirim Email</a>
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:e123ko1@gmail.com">e123ko1@gmail.com</a></p>
+                    <p><i class="fas fa-phone"></i> +62 851-5661-5380</p>
+                </div>
+                <a href="mailto:e123ko1@gmail.com" class="btn"><i class="fas fa-paper-plane"></i> Kirim Email</a>
             </div>
         </section>
     </main>
 
     <footer class="footer">
-        <p>&copy; 2024 Eko Christian Aritonang. Dibuat dengan Vscode.</p>
+        <p>&copy; 2024 Eko Christian Aritonang. Dibuat dengan ❤ dan HTML.</p>
     </footer>
 
     <button id="backToTop" class="back-to-top">↑</button>
