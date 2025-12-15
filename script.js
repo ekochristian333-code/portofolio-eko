@@ -1,7 +1,6 @@
 // --- Tombol Kembali ke Atas (Back to Top) ---
 const backToTopButton = document.getElementById('backToTop');
 
-// Tampilkan tombol saat pengguna scroll ke bawah 300px
 window.addEventListener('scroll', () => {
     if (window.pageYOffset > 300) {
         backToTopButton.style.display = 'block';
@@ -10,7 +9,6 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Fungsi untuk scroll kembali ke atas saat tombol diklik
 backToTopButton.addEventListener('click', () => {
     window.scrollTo({
         top: 0,
